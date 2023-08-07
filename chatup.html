@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      AI
+    </title>
+ 
+    <style>
+      .body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: black;
+        
+      }
+      
+      ::placeholder {
+        color: red;
+      }
+      
+      .AI {
+        background-color: red;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+      }
+      
+      .chat-container {
+        max-width:600px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      
+      .chat-header {
+        color:red;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .chat-header h {
+        color: red;
+      }
+      
+      .chat-messages {
+        height: 400px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: red;
+        border-color: red;
+      }
+      
+      .chat-input {
+        
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .chat-input input {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: transparent;
+        color: red;
+        border-color: red;
+      }
+      
+      .chat-input button {
+        background-color: #333;
+        color: White;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .chat-input button : hover {
+        color: red;
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <div class="AI">
+      <h>
+        <strong>
+          AI
+        </strong>
+      </h>
+    </div>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Chat Room</h2>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type your message here..." id="input-message">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <script src="JavaScript.js"></script>
+  </body>
+</html>
